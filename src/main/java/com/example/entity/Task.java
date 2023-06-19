@@ -22,7 +22,7 @@ public class Task {
     @Column(name = "status")
     private String status; 
 
-    public Task(){}
+    public Task(){this.id = "";}
 
     public Task(String id, String title, String description, String status)
     {

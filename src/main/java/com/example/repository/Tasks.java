@@ -10,5 +10,5 @@ import com.example.entity.Task;
 
 @Repository
 public interface Tasks extends JpaRepository<Task, String>{
-     public Optional<Task> findByStatus(String status);
+     public Optional<List<Task>> findByStatus(String status);
 }
