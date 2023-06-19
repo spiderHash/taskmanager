@@ -1,7 +1,26 @@
-package com.example.response;
+package com.example.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tasks")
 public class Task {
-    private String id, title, description, status; 
+    
+    @Id
+    @Column(name = "id")
+    private String id;
+
+    @Column(name = "title")
+    private String title;
+
+    @Column(name = "description")
+    private String description;
+
+    @Column(name = "status")
+    private String status; 
 
     public Task(){}
 

@@ -1,7 +1,12 @@
 package com.example.services;
 
-import com.example.response.Task;
+import java.util.List;
+import java.util.Optional;
+
+import com.example.entity.Task;
 
 public interface TaskmanagerServices {
-    public Task getAll();
+    public List<Task> getAll();
+    public Optional<Task> getById(String id);
+    public Optional<Task> getByStatus(String status);
 }
